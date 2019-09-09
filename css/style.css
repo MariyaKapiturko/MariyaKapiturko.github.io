@@ -1,10 +1,16 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
 }
 
 .container {
-    max-width: 1140px;
-    margin: auto;
+  max-width: 1140px;
+  margin: auto;
 }
 
 .header {
@@ -12,38 +18,43 @@ body {
   padding: 45px 0 145px 0;
 }
 
-.header .header__top {
-    margin-bottom: 120px;
+.header__top {
+  margin-bottom: 120px;
 }
 
-.header .top {
+.top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.top .logo {
+.logo {
   font-size: 18px;
   font-weight: 800;
 }
 
-.top .nav {
+.nav {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-.nav .nav__item {
-    margin-right: 20px;
-    font-size: 14px;
+.nav__item {
+  margin-right: 20px;
+  font-size: 14px;
 }
 
-.nav .nav__item:last-child {
-    margin-right: 0;
+.nav__link {
+  text-decoration: none;
+  color: #000000;
 }
 
-.top .phone {
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.phone {
   font-size: 16px;
   font-weight: 800;
   text-decoration: none;
@@ -51,41 +62,176 @@ body {
 }
 
 .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header-content .header-content__text {
-    flex-basis: 50%;
+.header-content__text {
+  flex-basis: 50%;
 }
 
-.header-content .header-content__image {
-    max-width: 600px;
-    flex-basis: 45%;
+.header-content__image {
+  max-width: 600px;
+  flex-basis: 45%;
 }
 
-.header-content .header-content__title {
-    font-size: 58px;
-    margin-bottom: 20px;
+.header-content__title {
+  font-size: 58px;
+  margin-bottom: 20px;
 }
 
-.header-content .header-content__description {
-    font-size: 17px;
-    line-height: 160%;
-    margin-bottom: 40px;
+.header-content__description {
+  font-size: 17px;
+  line-height: 160%;
+  margin-bottom: 40px;
 }
 
-.header-content .button {
-    background-color: #FF6C6C;
-    border: none;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 160%;
-    padding: 15px 56px;
-    border-radius: 4px;
+.button {
+  background-color: #ff6c6c;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 160%;
+  padding: 15px 56px;
+  border-radius: 4px;
 }
 
-.header-content .button--shadow {
-    box-shadow: 0px 10px 25px rgba(255, 108, 108, 0.5);
+.button--shadow {
+  box-shadow: 0px 10px 25px rgba(255, 108, 108, 0.5);
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section__title {
+  margin-bottom: 50px;
+}
+
+.card {
+  flex-basis: 25%;
+  background: #f8f8f8;
+  box-shadow: 0px 4px 4px rgba(104, 104, 104, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  padding: 30px;
+}
+
+.goods__card {
+  margin-bottom: 30px;
+}
+
+.card__image {
+  margin-bottom: 28px;
+}
+
+.card__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.card__title {
+  font-size: 16px;
+  text-align: left;
+  max-width: 200px;
+}
+
+.card__price {
+  font-size: 36px;
+}
+
+.card__button {
+  width: 100%;
+}
+
+.review-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.review-card {
+  padding: 20px 30px;
+  background: #ffffff;
+  border: 1px solid #ededed;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(131, 131, 131, 0.25);
+  border-radius: 10px;
+  flex-basis: 24%;
+  min-height: 250px;
+}
+
+.review-card__title {
+  margin-bottom: 5px;
+}
+
+.review-card__text {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.footer {
+  background: #f8f8f8;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  flex-basis: 47%;
+}
+
+.map {
+  flex-basis: 50%;
+}
+
+.input {
+  background: #ffffff;
+  font-size: 14px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(217, 217, 217, 0.25);
+  border-radius: 5px;
+  padding: 25px 30px;
+}
+
+.form__inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__input {
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+.form__textarea {
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+}
+
+.form__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+}
+
+.social__link {
+  text-decoration: none;
+  margin-left: 22px;
 }
