@@ -12,7 +12,7 @@ body {
 }
 .header {
   background-color: #f8f8f8;
-  padding: 45px 0 145px 0;
+  padding-top: 45px;
 }
 .header__top {
   margin-bottom: 120px;
@@ -60,6 +60,7 @@ body {
 .header-content__image {
   max-width: 600px;
   flex-basis: 45%;
+  object-fit: contain;
 }
 .header-content__title {
   font-size: 58px;
@@ -131,6 +132,7 @@ body {
   flex-wrap: nowrap;
 }
 .review-card {
+  margin: 0 20px;
   padding: 20px 30px;
   background: #ffffff;
   border: 1px solid #ededed;
@@ -188,6 +190,7 @@ body {
 }
 .social {
   display: flex;
+  flex-wrap: wrap;
 }
 .social__link {
   text-decoration: none;
@@ -219,6 +222,10 @@ body {
     font-size: 14px;
     padding: 15px 40px;
   }
+  .social {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
  
 @media (max-width: 990px) {
@@ -242,6 +249,10 @@ body {
   }
   .review-card:last-child {
     margin-right: 0px;
+  }
+  .social {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
