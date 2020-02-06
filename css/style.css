@@ -182,6 +182,7 @@ body {
   margin-bottom: 30px;
   display: block;
   width: 100%;
+  resize: none;
 }
 .form__buttons {
   display: flex;
